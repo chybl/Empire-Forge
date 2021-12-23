@@ -63,7 +63,7 @@
 #Configurations related to recipes.
 [recipes]
 	#List of recipes that should not be added.
-	blacklist = []
+	blacklist = ["jaopca:dusts.to_material_blasting.zinc", "jaopca:dusts.to_material_blasting.copper", "jaopca:dusts.to_material_blasting.iron", "jaopca:dusts.to_material_blasting.gold", "jaopca:dusts.to_material.zinc", "jaopca:dusts.to_material.copper", "jaopca:dusts.to_material.iron", "jaopca:dusts.to_material.gold"]
 
 #Configurations related to loot tables.
 [lootTables]

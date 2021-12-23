@@ -23,6 +23,8 @@ onEvent('item.tags', event =>{
 })
 
 
+
+
 /** ListMaker
  * makes a new list that's a copy of every element with the prefix attached.
  * 
@@ -65,8 +67,33 @@ let crushedOreList = listMaker('#create:crushed_ores/',metalList)
 
 let blocksList = listMaker('#forge:storage_blocks/',metalList)
 
+let dustList = listMaker('#forge:dusts/',metalList)
+
 //basically public static void Main(String args[])
 onEvent('recipes', event => {
+
+    
+    
+    /**
+     * unfortunately redundant function for adding milling.
+     * @param {*} input recipe inputs only 1 element please
+     * @param {*} output recipe outputs only 1 element please
+     */
+    function addMilling(output,input)
+    {
+        event.custom({
+            type: 'create:milling',
+            ingredients: [
+                Ingredient.of(input).toJson()
+            ],
+            results: [
+                Item.of(output).toResultJson(),
+            ],
+            processingTime: 80
+        })
+    }
+
+    
 
     //remove every recipe for an ingot in list.
     ingotList.forEach(element => event.remove({output:element}))
@@ -89,14 +116,28 @@ onEvent('recipes', event => {
         event.shapeless('9x '+ingotList[i], blocksList[i])
     }
 
-    //adds t2 milling recipes
+    //adds t2 milling, crushing, and crushed ore smelthing recipes
     for(let i = 0; i<metalList.length; i++)
     {
-        event.recipes.createMilling('2x '+crushedOreList[i],oreList[i])
+        event.recipes.createMilling('1x '+crushedOreList[i],oreList[i])
+        event.recipes.createCrushing(['2x '+crushedOreList[i],Item.of(crushedOreList[i]).withChance(0.25)],oreList[i])
     }
 
-    crushedOreList.forEach(element=>{
-            event.remove({output:element, type:'create:crushing'})
-        })
-    
+   //add crushed to blast recipes.
+   for(let i = 0; i<metalList.length; i++){
+        event.smelting(nuggetList[i],oreList[i])
+        event.blasting('3x '+nuggetList[i],oreList[i]) 
+   }
+
+   //add t3 ore processing. crushed ore ->[splashing] -> dust
+   for(let i = 0; i < metalList.length; i++)
+   {
+        event.recipes.createSplashing(['2x '+dustList[i],Item.of(crushedOreList[i]).withChance(0.50)],crushedOreList[i])
+        event.recipes.create
+        event.smelting(nuggetList[i],dustList[i])
+        event.blasting('3x '+nuggetList[i],dustList[i])
+
+    }
+
+   
 })
