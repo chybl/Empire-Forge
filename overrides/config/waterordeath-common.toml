@@ -1,0 +1,51 @@
+#How far horizontally a farmland block can be from water and still be hydrated. In vanilla, this is 4. Note that if this is 4, it means if we can start at the farmland and move up to 4 blocks west/east and THEN ALSO up to 4 blocks north/south, it will be hydrated.
+waterRangeHorizontal = 4
+#How far up a farmland block can be from water and still be hydrated. In vanilla, this is 0.
+waterRangeUp = 0
+#How far down a farmland block can be from water and still be hydrated. In vanilla, this is 1.
+waterRangeDown = 1
+#Whether broken crops drop seeds. If false, crops just break, nothing gets dropped.
+dryingCropsStillDrop = false
+#Whether soil that drops to zero moisture and dries further will kill crops and turn into dirt. In vanilla, this is false.
+dryCropsDie = true
+
+#Rate at which moisture reduces, by biome category. Each random tick, there's a [this value] / 10,000 chance that moisture rate will drop by the moistureLoss value (below) if there's no nearby water.
+[reduceMoistureRate]
+	BEACH = 2000
+	MESA = 10000
+	SAVANNA = 10000
+	THEEND = 10000
+	JUNGLE = 3000
+	OCEAN = 1000
+	TAIGA = 10000
+	DESERT = 10000
+	RIVER = 1000
+	FOREST = 7000
+	MUSHROOM = 7000
+	NETHER = 10000
+	PLAINS = 10000
+	SWAMP = 2000
+	NONE = 10000
+	EXTREME_HILLS = 10000
+	ICY = 10000
+
+#Moisture reduction per moisture loss tick without nearby water, by biome category.
+[moistureLoss]
+	BEACH = 1
+	MESA = 3
+	SAVANNA = 2
+	THEEND = 2
+	JUNGLE = 1
+	OCEAN = 1
+	TAIGA = 2
+	DESERT = 3
+	RIVER = 1
+	FOREST = 1
+	MUSHROOM = 1
+	NETHER = 4
+	PLAINS = 1
+	SWAMP = 1
+	NONE = 1
+	EXTREME_HILLS = 1
+	ICY = 2
+

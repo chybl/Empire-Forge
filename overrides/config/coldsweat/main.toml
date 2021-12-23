@@ -1,0 +1,27 @@
+#Overrides all other config options for easy difficulty management
+#Range: 1 ~ 5
+Difficulty = 3
+
+["Item settings"]
+	#Ice Resistance blocks all cold temperatures
+	"Ice Resistance Immunity" = true
+	#Fire Resistance blocks all hot temperatures
+	"Fire Resistance Immunity" = true
+	#Thermometer item is required to see ambient temperature
+	"Require Thermometer" = true
+
+["Misc things that are affected by temperature"]
+	#Sets whether damage scales with difficulty
+	"Damage Scaling" = true
+
+["Details about how the player is affected by temperature"]
+	#Rate at which the player's body temperature changes (default: 1.0 (100%))
+	#Range: 0.0 ~ Infinity
+	"Rate Multiplier" = 1.0
+	#Minimum habitable temperature (default: 0.25, on a scale of 0 - 2)
+	#Range: -Infinity ~ Infinity
+	"Minimum Habitable Temperature" = 0.42857142857142855
+	#Maximum habitable temperature (default: 1.75, on a scale of 0 - 2)
+	#Range: -Infinity ~ Infinity
+	"Maximum Habitable Temperature" = 1.619047619047619
+

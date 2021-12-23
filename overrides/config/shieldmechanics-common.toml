@@ -1,0 +1,16 @@
+
+["Shield mechanics settings"]
+	#List of shield items and their damage values. Start the game once to fill these entries with all modded shields automatically. Format: ["Shield name id;shield damage reduction on block; shield passive damage reduction when just held"]E.g. default: ["minecraft:shield;65;15"] this give the minecraft shield 65% damage reduction on block, and 15% passive damage reduction when not blocking but held.To put multiple values seperate them by commas like this:  ["minecraft:shield;65;15", "minecraft:shield;65;15"] 
+	shields = ["spartanshields:shield_tower_gold;63;11", "spartanshields:shield_tower_lead;67;13", "spartanshields:shield_tower_tin;65;14", "spartanshields:shield_tower_invar;64;19", "spartanshields:shield_botania_elementium;69;21", "spartanshields:shield_basic_iron;67;15", "spartanshields:shield_basic_steel;76;10", "spartanshields:shield_basic_constantan;74;13", "spartanshields:shield_tower_steel;78;10", "spartanshields:shield_mekanism_refined_glowstone;66;16", "spartanshields:shield_botania_terrasteel;79;17", "spartanshields:shield_mekanism_refined_obsidian;85;12", "spartanshields:shield_mekanism_lapis_lazuli;65;13", "spartanshields:shield_botania_manasteel;72;10", "spartanshields:shield_basic_silver;65;10", "spartanshields:shield_basic_lead;71;10", "spartanshields:shield_basic_platinum;72;19", "spartanshields:shield_tower_platinum;78;15", "spartanshields:shield_basic_copper;68;14", "spartanshields:shield_tower_nickel;73;10", "minecraft:shield;65;15", "spartanshields:shield_tower_silver;59;14", "spartanshields:shield_mekanism_powered_elite;85;25", "spartanshields:shield_basic_netherite;84;12", "spartanshields:shield_basic_bronze;76;10", "spartanshields:shield_tower_iron;65;17", "spartanshields:shield_tower_bronze;72;13", "spartanshields:shield_tower_obsidian;75;19", "spartanshields:shield_basic_wood;58;10", "spartanshields:shield_tower_constantan;68;14", "spartanshields:shield_tower_electrum;64;16", "spartanshields:shield_basic_invar;66;20", "spartanshields:shield_basic_nickel;70;12", "spartanshields:shield_basic_diamond;78;17", "spartanshields:shield_mekanism_powered_ultimate;85;25", "spartanshields:shield_basic_electrum;68;10", "spartanshields:shield_basic_tin;61;18", "spartanshields:shield_tower_diamond;75;21", "spartanshields:shield_mekanism_powered_advanced;85;25", "spartanshields:shield_mekanism_osmium;72;14", "spartanshields:shield_tower_netherite;85;12", "spartanshields:shield_mekanism_powered_basic;85;25", "spartanshields:shield_basic_gold;66;10", "spartanshields:shield_basic_obsidian;80;14", "spartanshields:shield_basic_stone;61;15", "spartanshields:shield_tower_copper;61;18", "spartanshields:shield_tower_wood;57;13", "spartanshields:shield_tower_stone;66;10"]
+	#Should the altered shield mechanic only affect players
+	playerOnly = false
+	#Should blocking with a shield set it on cooldown(players only), values are in ticks. 20 ticks = 1 sec
+	#Range: 0 ~ 100
+	blockCooldown = 5
+	#Maximum percent of damage allowed to be blocked. Default:85
+	#Range: 0 ~ 100
+	maxblockdamagereduction = 85
+	#Maximum percent of damage reduction while holding a shield(not blocking). Default:25
+	#Range: 0 ~ 100
+	maxpassivedamagereduction = 25
+

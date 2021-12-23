@@ -1,0 +1,7 @@
+#If true, dispensers can't place or remove source blocks.
+fixIce = true
+#List of fish buckets. Dispensers will toss out the fish and the water bucket separately.
+dispenserFishBucketItems = ["minecraft:cod_bucket", "minecraft:salmon_bucket", "minecraft:pufferfish_bucket", "minecraft:tropical_fish_bucket"]
+#List of items that can place/consume water when a dispenser uses them, that should be overwritten to just throw the item instead. Except don't add buckets, water buckets, lava buckets, or fish buckets, because this mod gives them their own behavior.
+dispenserDefault = []
+
