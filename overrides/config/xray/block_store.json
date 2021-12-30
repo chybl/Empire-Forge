@@ -1,9 +1,16 @@
 [
   {
-    "name": "Gold Ore",
-    "blockName": "minecraft:gold_ore",
-    "order": 3,
-    "color": 16776960,
+    "name": "Ancient Debris",
+    "blockName": "minecraft:ancient_debris",
+    "order": 9,
+    "color": 4273175,
+    "drawing": true
+  },
+  {
+    "name": "Silver Ore",
+    "blockName": "darkerdepths:silver_ore",
+    "order": 13,
+    "color": 8947853,
     "drawing": true
   },
   {
@@ -14,17 +21,10 @@
     "drawing": true
   },
   {
-    "name": "Iron Ore",
-    "blockName": "minecraft:iron_ore",
-    "order": 5,
-    "color": 8941401,
-    "drawing": true
-  },
-  {
-    "name": "Nether Gold Ore",
-    "blockName": "minecraft:nether_gold_ore",
-    "order": 4,
-    "color": 16762400,
+    "name": "Diamond Ore",
+    "blockName": "minecraft:diamond_ore",
+    "order": 1,
+    "color": 65535,
     "drawing": true
   },
   {
@@ -35,10 +35,31 @@
     "drawing": true
   },
   {
-    "name": "Ancient Debris",
-    "blockName": "minecraft:ancient_debris",
-    "order": 9,
-    "color": 4273175,
+    "name": "Redstone Ore",
+    "blockName": "minecraft:redstone_ore",
+    "order": 7,
+    "color": 16711680,
+    "drawing": true
+  },
+  {
+    "name": "Gold Ore",
+    "blockName": "minecraft:gold_ore",
+    "order": 3,
+    "color": 16776960,
+    "drawing": true
+  },
+  {
+    "name": "Emerald Ore",
+    "blockName": "minecraft:emerald_ore",
+    "order": 2,
+    "color": 44544,
+    "drawing": false
+  },
+  {
+    "name": "Coal Ore",
+    "blockName": "minecraft:coal_ore",
+    "order": 0,
+    "color": 0,
     "drawing": true
   },
   {
@@ -49,31 +70,10 @@
     "drawing": true
   },
   {
-    "name": "Diamond Ore",
-    "blockName": "minecraft:diamond_ore",
-    "order": 1,
-    "color": 65535,
-    "drawing": true
-  },
-  {
-    "name": "Coal Ore",
-    "blockName": "minecraft:coal_ore",
-    "order": 0,
-    "color": 0,
-    "drawing": true
-  },
-  {
-    "name": "Emerald Ore",
-    "blockName": "minecraft:emerald_ore",
-    "order": 2,
-    "color": 44544,
-    "drawing": true
-  },
-  {
-    "name": "Redstone Ore",
-    "blockName": "minecraft:redstone_ore",
-    "order": 7,
-    "color": 16711680,
+    "name": "Nether Gold Ore",
+    "blockName": "minecraft:nether_gold_ore",
+    "order": 4,
+    "color": 16762400,
     "drawing": true
   },
   {
@@ -81,6 +81,13 @@
     "blockName": "minecraft:nether_quartz_ore",
     "order": 8,
     "color": 16253123,
+    "drawing": true
+  },
+  {
+    "name": "Iron Ore",
+    "blockName": "minecraft:iron_ore",
+    "order": 5,
+    "color": 8941401,
     "drawing": true
   }
 ]

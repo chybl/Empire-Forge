@@ -1,0 +1,15 @@
+
+[general]
+
+	[general.lava]
+		#Biomes that lava is infinite in
+		"infinite lava biomes" = ["minecraft:crimson_forest", "minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:warped_forest"]
+		#Is the list below a whitelist, changing to false will make it a blacklist instead
+		whitelist = true
+
+	[general.water]
+		#Is the list below a whitelist, changing to false will make it a blacklist instead
+		whitelist = true
+		#Biomes that water is infinite in
+		"infinite water biomes" = ["minecraft:cold_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_frozen_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_ocean", "minecraft:deep_warm_ocean", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:ocean", "minecraft:river", "minecraft:warm_ocean"]
+

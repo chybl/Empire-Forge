@@ -1,0 +1,51 @@
+
+#Config A
+[config_a]
+	#Speed bonus [default: 0.015]
+	#Range: -0.1 ~ 1.0
+	configASpeed = 0.015
+	#Enable config A? [true / false]
+	configAEnabled = true
+	#List of blocks or tags for config A (format is "modid:block_name" for a block and "#namespace:tag_name" for a tag); Note: blocks take priority over tags
+	configABlocks = ["#minecraft:planks","minecraft:slabs","#minecraft:stairs","minecraft:grass_path"]
+
+#Config B
+[config_b]
+	#List of blocks or tags for config B (format is "modid:block_name" for a block and "#namespace:tag_name" for a tag); Note: blocks take priority over tags
+	configBBlocks = ["#forge:dirt","#forge:stone"]
+	#Speed bonus [default: 0.03]
+	#Range: -0.1 ~ 1.0
+	configBSpeed = -0.02
+	#Enable config B? [true / false]
+	configBEnabled = true
+
+#Config C
+[config_c]
+	#Speed bonus
+	#Range: -0.1 ~ 1.0
+	configCSpeed = -0.0275
+	#Enable config C? [true / false]
+	configCEnabled = true
+	#List of blocks or tags for config C (format is "modid:block_name" for a block and "#namespace:tag_name" for a tag); Note: blocks take priority over tags
+	configCBlocks = ["minecraft:snow","minecraft:snow_block","#minecraft:sand","minecraft:netherrack"]
+
+#Config D
+[config_d]
+	#Enable config D? [true / false]
+	configDEnabled = false
+	#Speed bonus
+	#Range: -0.1 ~ 1.0
+	configDSpeed = 0.0
+	#List of blocks or tags for config D (format is "modid:block_name" for a block and "#namespace:tag_name" for a tag); Note: blocks take priority over tags
+	configDBlocks = []
+
+#Config E
+[config_e]
+	#List of blocks or tags for config E (format is "modid:block_name" for a block and "#namespace:tag_name" for a tag); Note: blocks take priority over tags
+	configEBlocks = []
+	#Enable config E? [true / false]
+	configEEnabled = false
+	#Speed bonus
+	#Range: -0.1 ~ 1.0
+	configESpeed = 0.0
+

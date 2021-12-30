@@ -504,14 +504,14 @@
 	Speleothems = true
 	"Elder Prismarine Underground Biome" = true
 	"Blossom Trees" = false
-	"Sandstone Underground Biome" = true
-	"Glowshroom Underground Biome" = true
+	"Sandstone Underground Biome" = false
+	"Glowshroom Underground Biome" = false
 	"Permafrost Underground Biome" = true
 	"Underground Clay" = true
 	"Slime Underground Biome" = false
 	"Fairy Rings" = true
 	"Chorus Vegetation" = true
-	Crevices = true
+	Crevices = false
 	"Nether Obsidian Spikes" = true
 	"Mega Caves" = true
 	"Realistic World Gen" = false

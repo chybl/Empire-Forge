@@ -1,0 +1,5 @@
+Configure Carry On to only allow picking TE's and baby animals/chickens.
+Customize Big Ores a little more
+Customize armor set bonus
+find and config that speed mod
+config localized chat and voice chat

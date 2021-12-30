@@ -2,7 +2,7 @@
 "Enable Sleep & Respawn" = false
 "Enable Experience" = false
 "Enable Mining" = false
-"Enable Combat" = true
+"Enable Combat" = false
 "Enable Movement" = true
 "Enable Hunger" = false
 "Enable Stack Size" = false
@@ -12,9 +12,9 @@
 	#Spawners will no longer spawn mobs infinitely
 	"Enable Temporary Spawners" = true
 	#Less durable tools. Changing this config options requires a Minecraft restart
-	"Enable Tool Nerf" = true
+	"Enable Tool Nerf" = false
 	#Apply potion effects on certain hunger / health / experience level
-	"Enable Debuffing" = true
+	"Enable Debuffing" = false
 	#Various changes to explosions from knockback to shielding.
 	"Enable Explosion Overhaul" = true
 
@@ -75,9 +75,9 @@
 
 ["Sleep & Respawn"]
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up
-	"Enable Sleeping Effects" = true
+	"Enable Sleeping Effects" = false
 	#Makes sleeping impossible while begin able to set (or not) the spawn point
-	"Enable Prevent Sleeping" = false
+	"Enable Prevent Sleeping" = true
 
 	#Makes sleeping impossible while begin able to set (or not) the spawn point
 	["Sleep & Respawn"."Prevent Sleeping"]
@@ -223,7 +223,7 @@
 
 [Movement]
 	#Armor slows down the player based off the Armor and Toughness given.
-	"Enable Weighted Armor" = false
+	"Enable Weighted Armor" = true
 	#Prevents the player from placing blocks below him when in mid air.
 	"Enable No Pillaring" = true
 	#Player's slowed down for a brief moment when hit.
@@ -247,7 +247,7 @@
 		"Percentage Increase per Toughness" = 0.03
 		#Define here a list of total slowdown percentage (with full armor) per material. This has priority over 'Slowdown per Armor' and 'Percentage Increase per Toughness'. Material's names are the names in the armor's ids. E.g. Gold Armor is 'golden' as the ids are like 'golden_chestplate'.
 		#Format is material,total_slowdown
-		"Material Weight" = ["leather,0.04", "chainmail,0.12", "golden,0.08", "iron,0.15", "diamond,0.25", "netherite,0.333"]
+		"Material Weight" = ["golden,0.10", "iron,0.10", "diamond,0.10", "netherite,0.1", "chainmail,0.0", "leather,0.0"]
 
 	#Different weathers slowdown the player more.
 	[Movement."Weather Slowdown"]
@@ -263,13 +263,13 @@
 
 [Hunger]
 	#Makes Health regen work differently, like in Combat Test snapshots or similar to Hunger Overhaul
-	"Enable Health Regen" = true
+	"Enable Health Regen" = false
 	#Make the player consume more hunger with different actions
-	"Enable Exhaustion Increase" = true
+	"Enable Exhaustion Increase" = false
 	#Change food's hunger and saturation given, also makes food heal you by a bit. Changing anything requires a Minecraft restart.
-	"Enable Food Hunger" = true
+	"Enable Food Hunger" = false
 	#Changes to the speed on how food is eaten or how items are consumed.
-	"Enable Food Consuming" = true
+	"Enable Food Consuming" = false
 
 	#Makes Health regen work differently, like in Combat Test snapshots or similar to Hunger Overhaul
 	[Hunger."Health Regen"]

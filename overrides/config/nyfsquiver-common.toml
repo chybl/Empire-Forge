@@ -32,12 +32,6 @@ rowsBasic = 1
 #How many rows does the iron quiver have?
 #Range: 1 ~ 13
 rowsIron = 2
-#How many rows does the copper quiver have?
-#Range: 1 ~ 13
-rowsCopper = 2
-#How many rows does the silver quiver have?
-#Range: 1 ~ 13
-rowsSilver = 3
 #How many rows does the gold quiver have?
 #Range: 1 ~ 13
 rowsGold = 3
@@ -53,12 +47,6 @@ columnsBasic = 9
 #How many columns does the iron quiver have?
 #Range: 1 ~ 13
 columnsIron = 9
-#How many columns does the copper quiver have?
-#Range: 1 ~ 13
-columnsCopper = 9
-#How many columns does the silver quiver have?
-#Range: 1 ~ 13
-columnsSilver = 9
 #How many columns does the gold quiver have?
 #Range: 1 ~ 13
 columnsGold = 9

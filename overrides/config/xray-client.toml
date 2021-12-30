@@ -17,5 +17,5 @@
 	#If you must change it then these are the valid values 0 -> 7
 	#but please leave it alone :P
 	#Range: 0 ~ 9
-	radius = 3
+	radius = 6
 

@@ -19,7 +19,7 @@ onEvent('item.tags', event =>{
     })
 
     //create crushed brass given the proper tag.
-    event.add('create:crushed_ores/brass','create:crushed_brass')
+    //event.add('create:crushed_ores/brass','create:crushed_brass')
 })
 
 
@@ -51,8 +51,7 @@ let metalList = [
     'gold',
     'copper',
     'zinc',
-    'iron',
-    'brass'
+    'iron'
 ]
 
 
@@ -71,27 +70,6 @@ let dustList = listMaker('#forge:dusts/',metalList)
 
 //basically public static void Main(String args[])
 onEvent('recipes', event => {
-
-    
-    
-    /**
-     * unfortunately redundant function for adding milling.
-     * @param {*} input recipe inputs only 1 element please
-     * @param {*} output recipe outputs only 1 element please
-     */
-    function addMilling(output,input)
-    {
-        event.custom({
-            type: 'create:milling',
-            ingredients: [
-                Ingredient.of(input).toJson()
-            ],
-            results: [
-                Item.of(output).toResultJson(),
-            ],
-            processingTime: 80
-        })
-    }
 
     
 
@@ -125,18 +103,16 @@ onEvent('recipes', event => {
 
    //add crushed to blast recipes.
    for(let i = 0; i<metalList.length; i++){
-        event.smelting(nuggetList[i],oreList[i])
-        event.blasting('3x '+nuggetList[i],oreList[i]) 
+        event.smelting(nuggetList[i],crushedOreList[i])
+        event.blasting('3x '+nuggetList[i],crushedOreList[i]) 
    }
 
    //add t3 ore processing. crushed ore ->[splashing] -> dust
-   for(let i = 0; i < metalList.length; i++)
+   for(let i = 0; i < dustList.length; i++)
    {
-        event.recipes.createSplashing(['2x '+dustList[i],Item.of(crushedOreList[i]).withChance(0.50)],crushedOreList[i])
-        event.recipes.create
+        event.recipes.createSplashing(['2x '+dustList[i],Item.of(dustList[i]).withChance(0.50)],crushedOreList[i])
         event.smelting(nuggetList[i],dustList[i])
         event.blasting('3x '+nuggetList[i],dustList[i])
-
     }
 
    
